@@ -1,122 +1,150 @@
-🚀 Real-Time Collaborative Chat Application with AI (MERN Stack)
+# 🚀 Real-Time Collaborative Chat Application with AI (MERN Stack)
 
-A full-stack, production-ready real-time chat and collaboration platform built using the MERN stack, enhanced with AI capabilities powered by Google Gemini, Redis caching, and Socket.IO-based real-time communication.
+A **full-stack, production-ready real-time chat and collaboration platform** built using the **MERN stack**, enhanced with **AI capabilities powered by Google Gemini**, **Redis caching**, and **Socket.IO–based real-time communication**.
 
-This project demonstrates strong skills in full-stack development, real-time systems, authentication, AI integration, and scalable system design.
+This project demonstrates strong expertise in **full-stack development, real-time systems, authentication, AI integration, and scalable system design**.
 
-🔑 Key Highlights
+---
 
-Real-time chat using Socket.IO (WebSockets)
-AI-powered conversations using Google Gemini
-Secure JWT-based authentication
-Project-based collaboration system
-Redis for caching and real-time performance optimization
-Integrated code editor & file management
-Run code directly in browser using Web Containers
-Clean UI built with React + Tailwind CSS
+## 🔑 Key Highlights
 
-🧠 Skills & Technologies (ATS Optimized)
+- ⚡ Real-time chat using **Socket.IO (WebSockets)**
+- 🤖 AI-powered conversations using **Google Gemini**
+- 🔐 Secure **JWT-based authentication**
+- 👥 Project-based collaboration system
+- 🚀 **Redis** for caching & real-time performance optimization
+- 🧑‍💻 Integrated **code editor & file management**
+- ▶️ Run code directly in the browser using **Web Containers**
+- 🎨 Clean, responsive UI built with **React + Tailwind CSS**
 
-Frontend
+---
 
-React.js
-JavaScript (ES6+)
-Context API
-Tailwind CSS
-Axios
-Highlight.js (HLJS)
+## 🧠 Skills & Technologies (ATS Optimized)
 
-Backend
+### Frontend
 
-Node.js
-Express.js
-REST APIs
-MongoDB
-Mongoose
-JWT Authentication
-Middleware architecture
+- React.js
+- JavaScript (ES6+)
+- Context API
+- Tailwind CSS
+- Axios
+- Highlight.js (HLJS)
 
-Real-Time & Performance
+### Backend
 
-Socket.IO
-WebSockets
-Redis (caching & message broadcasting)
-Event-driven architecture
+- Node.js
+- Express.js
+- REST APIs
+- MongoDB
+- Mongoose
+- JWT Authentication
+- Middleware Architecture
 
-AI Integration
+### Real-Time & Performance
 
-Google Gemini API
-Prompt engineering
-AI service abstraction
-AI latency handling
+- Socket.IO
+- WebSockets
+- Redis (Caching & Message Broadcasting)
+- Event-driven Architecture
 
-Advanced Features
+### AI Integration
 
-Web Containers (browser-based Node.js runtime)
-Code editor & file tree system
-iframe-based output rendering
+- Google Gemini API
+- Prompt Engineering
+- AI Service Abstraction
+- AI Latency Handling
 
-📌 Project Description
+### Advanced Features
 
-This application allows users to register, authenticate, create projects, add collaborators, and communicate in real time within project-specific chat rooms.
+- Web Containers (Browser-based Node.js Runtime)
+- Code Editor & File Tree System
+- iframe-based Output Rendering
 
-Users can interact with an AI assistant directly inside the chat using special commands (e.g., @ai), enabling intelligent responses, code generation, and task execution without leaving the collaboration environment.
+---
 
-The platform also includes a code editor with file tree support, allowing users to run and preview code directly in the browser.
+## 📌 Project Description
 
-🏗️ System Architecture
+This application allows users to **register, authenticate, create projects, add collaborators**, and **communicate in real time** within project-specific chat rooms.
+
+Users can interact with an **AI assistant directly inside the chat** using special commands (e.g., `@ai`), enabling **intelligent responses, code generation, and task execution** without leaving the collaboration environment.
+
+The platform also includes a **code editor with file tree support**, allowing users to **run and preview code directly in the browser**.
+
+---
+
+## 🏗️ System Architecture
+
+```
 React Frontend
-↓
+      ↓
 Express.js + Node.js API
-↓
+      ↓
 Socket.IO (Real-Time Layer)
-↓
+      ↓
 Redis (Caching & Broadcasting)
-↓
+      ↓
 MongoDB (Persistent Storage)
-↓
+      ↓
 AI Service Layer → Google Gemini API
+```
 
-🔐 Authentication & Security
+---
 
-User registration & login
-JWT-based authentication
-Protected routes using auth middleware
-Secure socket authentication
-Backend-only access to AI API keys
-Role-based project access
+## 🔐 Authentication & Security
 
-🔁 Real-Time Communication Flow
+- User registration & login
+- JWT-based authentication
+- Protected routes using auth middleware
+- Secure socket authentication
+- Backend-only access to AI API keys
+- Role-based project access
 
-User logs in and establishes a socket connection
-Socket is authenticated using JWT
-User joins a project-specific room
-Messages are sent via Socket.IO
-Redis broadcasts messages for scalability
-UI updates instantly for all collaborators
+---
 
-🤖 AI Integration Workflow
+## 🔁 Real-Time Communication Flow
 
-User sends message containing @ai
-Backend detects AI trigger
-Prompt is extracted from user message
-Request sent to Google Gemini API
-AI response processed asynchronously
-Response broadcasted via Socket.IO
-Frontend displays AI-generated message in real time
+1. User logs in and establishes a socket connection
+2. Socket is authenticated using JWT
+3. User joins a project-specific room
+4. Messages are sent via Socket.IO
+5. Redis broadcasts messages for scalability
+6. UI updates instantly for all collaborators
 
-📂 Code Editor & File Management
+---
 
-Visual file tree for project structure
-Integrated code editor
-Syntax highlighting using Highlight.js
-Run code inside browser using Web Containers
-Output rendered using iframe
+## 🤖 AI Integration Workflow
 
-🧪 Sample AI Prompt
+1. User sends a message containing `@ai`
+2. Backend detects the AI trigger
+3. Prompt is extracted from the message
+4. Request sent to **Google Gemini API**
+5. AI response processed asynchronously
+6. Response broadcasted via Socket.IO
+7. Frontend displays AI-generated message in real time
+
+---
+
+## 📂 Code Editor & File Management
+
+- Visual file tree for project structure
+- Integrated code editor
+- Syntax highlighting using Highlight.js
+- Run code inside browser using Web Containers
+- Output rendered using iframe
+
+---
+
+## 🧪 Sample AI Prompt
+
+```
 @ai explain how Redis improves real-time chat performance
+```
 
-📁 Project Structure (Simplified)
+---
+
+## 📁 Project Structure (Simplified)
+
+```
 frontend/
 ├── components/
 ├── context/
@@ -129,22 +157,38 @@ backend/
 ├── routes/
 ├── models/
 ├── middleware/
-├── services/ (AI & Redis)
+├── services/   # AI & Redis
 └── server.js
+```
 
-⚡ Performance Optimizations
+---
 
-Redis caching for frequently accessed data
-Event-based Socket.IO communication
-Reduced API calls using local state & context
-Async AI processing to prevent UI blocking
+## ⚡ Performance Optimizations
 
-🚧 Future Improvements
+- Redis caching for frequently accessed data
+- Event-based Socket.IO communication
+- Reduced API calls using local state & context
+- Async AI processing to prevent UI blocking
 
-Message search & filtering
-File uploads & media sharing
-End-to-end encryption
-AI chat summarization
-Role-based permissions
-Rate limiting for AI usage
-Notifications & mentions
+---
+
+## 🚧 Future Improvements
+
+- 🔍 Message search & filtering
+- 📎 File uploads & media sharing
+- 🔐 End-to-end encryption
+- 🧠 AI chat summarization
+- 🧑‍⚖️ Role-based permissions
+- ⏱️ Rate limiting for AI usage
+- 🔔 Notifications & mentions
+
+---
+
+## 👨‍💻 Author
+
+**Aadi Munjale**
+Full-Stack Developer | MERN | Real-Time Systems | AI Integration
+
+---
+
+⭐ If you find this project useful, feel free to **star** the repository!

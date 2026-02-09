@@ -186,19 +186,15 @@ const Project = () => {
             <i className="ri-group-fill"></i>
           </button>
         </header>
-        <div className="conversation-area pt-14 pb-10 grow flex flex-col h-full relative">
+        <div className="conversation-area pt-14 pb-10 flex-grow flex flex-col h-full relative">
           <div
             ref={messageBox}
-            className="message-box p-1 grow flex flex-col gap-1 overflow-auto max-h-full scrollbar-hide"
+            className="message-box p-1 flex-grow flex flex-col gap-1 overflow-auto max-h-full scrollbar-hide"
           >
             {messages.map((msg, index) => (
               <div
                 key={index}
-                className={`${
-                  msg.sender._id === "ai" ? "max-w-80" : "max-w-52"
-                } ${
-                  msg.sender._id == user._id.toString() && "ml-auto"
-                }  message flex flex-col p-2 bg-slate-50 w-fit rounded-md`}
+                className={`${msg.sender._id === "ai" ? "max-w-80" : "max-w-52"} ${msg.sender._id == user._id.toString() && "ml-auto"}  message flex flex-col p-2 bg-slate-50 w-fit rounded-md`}
               >
                 <small className="opacity-65 text-xs">{msg.sender.email}</small>
                 <div className="text-sm">
@@ -226,9 +222,7 @@ const Project = () => {
           </div>
         </div>
         <div
-          className={`sidePanel w-full h-full flex flex-col gap-2 bg-slate-50 absolute transition-all ${
-            isSidePanelOpen ? "translate-x-0" : "-translate-x-full"
-          } top-0`}
+          className={`sidePanel w-full h-full flex flex-col gap-2 bg-slate-50 absolute transition-all ${isSidePanelOpen ? "translate-x-0" : "-translate-x-full"} top-0`}
         >
           <header className="flex justify-between items-center px-4 p-2 bg-slate-200">
             <h1 className="font-semibold text-lg">Collaborators</h1>
@@ -281,9 +275,7 @@ const Project = () => {
                 <button
                   key={index}
                   onClick={() => setCurrentFile(file)}
-                  className={`open-file cursor-pointer p-2 px-4 flex items-center w-fit gap-2 bg-slate-300 ${
-                    currentFile === file ? "bg-slate-400" : ""
-                  }`}
+                  className={`open-file cursor-pointer p-2 px-4 flex items-center w-fit gap-2 bg-slate-300 ${currentFile === file ? "bg-slate-400" : ""}`}
                 >
                   <p className="font-semibold text-lg">{file}</p>
                 </button>
@@ -403,11 +395,7 @@ const Project = () => {
               {users.map((user) => (
                 <div
                   key={user.id}
-                  className={`user cursor-pointer hover:bg-slate-200 ${
-                    Array.from(selectedUserId).indexOf(user._id) != -1
-                      ? "bg-slate-200"
-                      : ""
-                  } p-2 flex gap-2 items-center`}
+                  className={`user cursor-pointer hover:bg-slate-200 ${Array.from(selectedUserId).indexOf(user._id) != -1 ? "bg-slate-200" : ""} p-2 flex gap-2 items-center`}
                   onClick={() => handleUserClick(user._id)}
                 >
                   <div className="aspect-square relative rounded-full w-fit h-fit flex items-center justify-center p-5 text-white bg-slate-600">

@@ -16,8 +16,6 @@ const io = new Server(server, {
   },
 });
 
-
-// auth.middleware for socket.io
 io.use(async (socket, next) => {
   try {
     const token =

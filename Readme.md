@@ -146,15 +146,15 @@ AI Service Layer → Google Gemini API
 
 ```
 frontend/
-├── components/
+├── auth/
+├── config/
 ├── context/
-├── pages/
-├── services/
-└── utils/
+├── routes/
+└── screens/
 
 backend/
 ├── controllers/
-├── routes/
+├── db/
 ├── models/
 ├── middleware/
 ├── services/   # AI & Redis

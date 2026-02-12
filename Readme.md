@@ -19,7 +19,7 @@ This project demonstrates strong expertise in **full-stack development, real-tim
 
 ---
 
-## 🧠 Skills & Technologies (ATS Optimized)
+## 🧠 Skills & Technologies
 
 ### Frontend
 
